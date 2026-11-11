@@ -1,0 +1,5 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import s from '@/components/content.module.css';
+export const metadata: Metadata = { title: 'Terms', robots: { index: false } };
+export default function Terms() { return <div className="container"><div className={s.policy}><header className={s.intro}><span className="eyebrow">Shop information</span><h1>Terms</h1></header><div className={s.notice}>Draft page — final purchasing terms require owner review before launch.</div><h2>A preview of what&apos;s growing</h2><p>Products, photographs, prices and stock shown in this preview are demonstration content. No product is currently being offered for sale through this website, and demonstration checkout does not create a purchase.</p><h2>Before we take orders</h2><p>Confirmed product details, pricing, payment options, delivery arrangements and purchasing terms will be published before real checkout becomes available.</p><Link href="/delivery" className="text-link">View delivery & pickup information</Link></div></div>; }

@@ -1,0 +1,5 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import s from '@/components/content.module.css';
+export const metadata: Metadata = { title: 'Privacy', robots: { index: false } };
+export default function Privacy() { return <div className="container"><div className={s.policy}><header className={s.intro}><span className="eyebrow">Shop information</span><h1>Privacy</h1></header><div className={s.notice}>Preview notice — the final privacy policy requires owner review before launch.</div><h2>About this preview</h2><p>This website currently demonstrates the ViduLeaf shopping experience. The cart uses your browser&apos;s local storage to remember selected sample products. The demonstration checkout does not place a real order or process payment.</p><h2>Before ordering opens</h2><p>We will publish the shop&apos;s contact details and explain how customer information is collected, used, retained and protected, including any service providers used for orders and payments.</p><p>Please use sample details when trying the demonstration checkout.</p><Link href="/" className="text-link">Return to ViduLeaf</Link></div></div>; }
